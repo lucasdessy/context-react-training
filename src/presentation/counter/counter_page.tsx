@@ -5,9 +5,8 @@ import { CounterContextInterface } from '../../application/counter/counter_state
 import { CounterActionsComponent } from './components/counter';
 
 export const CounterPage = () => {
-  // Selects which part of the global state we're interested in
+  // Tries to get the context from the nearest provider
   const counter = useContext(CounterContext) as CounterContextInterface;
-  // Provides access to the dispatch function
  
   return (
     <div>
